@@ -10,8 +10,6 @@
 - name: Install WireGuard and other requirements 
   apt:
     name:
-      - linux-headers-{{ kernel_release.stdout }}
-      - linux-headers-generic
       - wireguard-dkms
       - wireguard-tools
       - python2.7        
